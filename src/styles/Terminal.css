@@ -1,0 +1,19 @@
+.terminal {
+    width: 600px;
+    height: 400px;
+    background-color: #000000;
+    color: #00ff22;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    border: #00ff22 2px solid;
+}
+
+.terminal-content {
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
