@@ -1,0 +1,12 @@
+.technologies {
+    width: 90%;
+    padding: 1.5em;
+    background-color: var(--bg);
+    
+    border-radius: 32px;
+    border: var(--primary) 2px solid;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

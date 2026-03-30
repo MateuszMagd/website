@@ -15,7 +15,7 @@ export default function Terminal({ text_in_terminal, folder, command, activePage
         <div className="terminal">
             <NavTerminal activePage={activePage} onNavigate={onNavigate} />
             <div className="terminal-content">
-                <p><span style={{ color: "#60a5fa" }}>matmag@portfolio</span>:<span style={{ color: "#9ca3af" }}>/{folder}$</span> {command}</p>
+                <p><span style={{ color: "var(--accent)" }}>matmag@portfolio</span>:<span style={{ color: "var(--text-dim)" }}>/{folder}$</span> {command}</p>
                 <p className="terminal-text">
                     {text_in_terminal}
                 </p>

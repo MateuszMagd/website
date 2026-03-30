@@ -7,13 +7,14 @@
 
   --text: #e5e7eb;
   --text-dim: #9ca3af;
+  --highlight: yellow;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 body {
-  padding: 15em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 
 
