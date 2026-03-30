@@ -1,16 +1,27 @@
 :root {
-  padding: 10em;
+  --bg: #0a0f1c;
+  --bg-secondary: #12182b;
+
+  --primary: #3b82f6;
+  --accent: #60a5fa;
+
+  --text: #e5e7eb;
+  --text-dim: #9ca3af;
+}
+
+body {
+  padding: 15em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(17, 17, 17);
+  overflow: hidden;
 
-  background-color: #0a0a0a;
 
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px
-  );
+  font-family: 'Share Tech Mono', monospace;
+
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(#0a0f1c, #05070f);
 
   background-size: 20px 20px;
 }

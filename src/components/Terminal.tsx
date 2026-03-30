@@ -2,14 +2,22 @@ import NavTerminal  from "./NavTerminal"
 
 import "../styles/Terminal.css"
 
-export default function Terminal() {
+interface TerminalProps {
+    text_in_terminal: string;
+    folder: string;
+    command: string;
+    activePage: string;
+    onNavigate: (page: string) => void;
+}
+
+export default function Terminal({ text_in_terminal, folder, command, activePage, onNavigate }: TerminalProps) {
     return ( 
         <div className="terminal">
-            <NavTerminal />
+            <NavTerminal activePage={activePage} onNavigate={onNavigate} />
             <div className="terminal-content">
-                <h1>About Me</h1>
-                <p>
-                    I'm a software developer with a passion for creating innovative solutions to complex problems. I have experience in a variety of programming languages and frameworks, and I'm always eager to learn new technologies. In my free time, I enjoy contributing to open source projects and exploring the latest trends in software development.
+                <p><span style={{ color: "#60a5fa" }}>matmag@portfolio</span>:<span style={{ color: "#9ca3af" }}>/{folder}$</span> {command}</p>
+                <p className="terminal-text">
+                    {text_in_terminal}
                 </p>
             </div>
         </div>
