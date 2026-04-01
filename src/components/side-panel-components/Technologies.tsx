@@ -1,36 +1,25 @@
 import '../../styles/Technologies.css'
 
-export default function Technologies() {
+import type { TechnologiesTableProps } from '../../interfaces';
+
+export default function Technologies({ headers, rows }: TechnologiesTableProps) {
     return (
         <div className="technologies">
             <table>
                 <thead>
                     <tr>
-                        <th>Technology</th>
-                        <th>Experience</th>
+                        {headers.map((header, index) => (
+                            <th key={index}>{header}</th>
+                        ))}
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Regular</td>
-                    </tr>
-                    <tr>
-                        <td>React</td>
-                        <td>Regular</td>
-                    </tr>
-                    <tr>
-                        <td>Node.js</td>
-                        <td>Regular</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Advanced</td>
-                    </tr>
-                    <tr>
-                        <td>Django</td>
-                        <td>Regular</td>
-                    </tr>
+                    {rows.map((tech, index) => (
+                        <tr key={index}>
+                            <td>{tech.name}</td>
+                            <td>{tech.experience}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>

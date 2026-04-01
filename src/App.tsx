@@ -6,9 +6,13 @@ function App() {
   return (
     <div className="app">
       <div className='left-panel'>
-        <SidePanel />
+        <div className='left-panel-group-row'>
+          <SidePanel />
+        </div>
+        
       </div>
       <div className='right-panel'>
+        
         <TerminalWindow />
       </div>
       

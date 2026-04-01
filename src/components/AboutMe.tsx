@@ -9,7 +9,7 @@ export default function AboutMe({ activePage, onNavigate }: AboutMeProps) {
     return (
         <>
             <Terminal 
-                text_in_terminal="I'm a software developer with a passion for creating innovative solutions to complex problems. I have experience in a variety of programming languages and frameworks, and I'm always eager to learn new technologies. In my free time, I enjoy contributing to open source projects and exploring the latest trends in software development."  
+                text_in_terminal="Hello! I'm Mateusz, a passionate software developer with a love for creating innovative solutions. With experience in various programming languages and frameworks, I enjoy tackling complex problems and building applications that make a difference. When I'm not coding, you can find me exploring new technologies and gaming! Always open to new opportunities and collaborations, feel free to reach out!"  
                 folder="aboutme"
                 command="cat aboutme.txt"
                 activePage={activePage}

@@ -1,0 +1,42 @@
+.time-panel-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+
+    font-size: 34px;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.25em 0em 0.25em 0em;
+}
+
+.time-panel-container .wave-separator {
+    padding: 0em 1 em 0em 1em;
+    flex: 1;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24'%3E%3Cpath d='M 0,12 C 6.67,4 13.33,4 20,12 C 26.67,20 33.33,20 40,12' fill='none' stroke='%233b82f6' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position-y: center;
+    animation: wave-flow 1s linear infinite;
+}
+
+@keyframes wave-flow {
+    from { background-position-x: 0px; }
+    to   { background-position-x: -40px; }
+}
+
+.time-panel-container .time {
+    flex: 1;
+    color: var(--accent);
+    margin: 0em 0em 0em 1em;
+    text-align: left;
+}
+
+.time-panel-container .date {
+    flex: 1;
+    color: var(--text);
+    margin: 0em 1em 0em 0em;
+    text-align: right;
+}

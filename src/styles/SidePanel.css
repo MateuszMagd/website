@@ -1,10 +1,48 @@
 .side-panel {
-    width: 100%;
+    width: 95%;
     margin: 0;
     padding: 0;
     color: var(--text);
     text-align: center;
     background: transparent;
     position: relative;
+    margin-right: 5%;
 
+}
+
+.tech-stack {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack-content-technologies {
+    width: 100%;
+
+    padding: 0.25em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.tech-stack + .tech-stack {
+    margin-top: 1em;
+}
+
+.time-panel {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+
+    font-size: 34px;
+    
+    border: 1px solid var(--primary);
+    border-radius: 32px;
+    overflow: hidden;
 }
