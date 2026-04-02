@@ -20,6 +20,7 @@
     border-top: var(--primary) 2px solid;
 }
 
+
 .terminal-text {
     padding-left: 2em;
     color: var(--accent);
