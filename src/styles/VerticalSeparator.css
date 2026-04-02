@@ -1,0 +1,29 @@
+.vertical-separator {
+    content: "";
+    position: relative;
+    width: 1px;
+    align-self: stretch;
+    background: var(--separator);
+}
+
+.vertical-separator::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 12px;
+    width: 1px;
+    background: var(--separator);
+    transform: translateY(-50%);
+}
+
+.vertical-separator::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 12px;
+    width: 1px;
+    background: var(--separator);
+    transform: translateY(-50%);
+}

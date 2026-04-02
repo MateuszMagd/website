@@ -1,8 +1,10 @@
 import "../styles/SidePanel.css"
 
-import Technologies from "./side-panel-components/Technologies"
+import TechCarousel from "./side-panel-components/TechCarousel"
 import Separator from "./stylish/Separator"
 import TimePanel from "./side-panel-components/TimePanel"
+import StatusPanel from "./side-panel-components/StatusPanel"
+import WorldView from "./side-panel-components/WorldView"
 
 export default function SidePanel() {
     return (
@@ -12,42 +14,20 @@ export default function SidePanel() {
                 <TimePanel />
             </div>
             <Separator rightText="Experience" leftText="Technology"/>
-            <div className="tech-stack">
-                <div className="tech-stack-content-technologies">
-                    <Technologies headers={["Technology", "Experience"]} rows={[
-                    { name: "Python", experience: "Advance" },
-                    { name: "Java", experience: "Regular" },
-                    { name: "C/C++/C#", experience: "Basic" },
-                    ]} />
-                    <Technologies headers={["Technology", "Experience"]} rows={[
-                        { name: "JavaScript", experience: "Regular" },
-                        { name: "React", experience: "Regular" },
-                        { name: "Node.js", experience: "Basic" },
-                        { name: "HTML/CSS", experience: "Regular" },
-                    ]} />
-                </div>
-            </div>
-            <div className="tech-stack">
-                <div className="tech-stack-content-technologies">
-                    <Technologies headers={["Technology", "Experience"]} rows={[
-                    { name: "Kubernetes", experience: "Basic" },
-                    { name: "Terraform", experience: "Basic" },
-                    { name: "Github Actions", experience: "Basic" },
-                    { name: "Docker", experience: "Regular" },
-                    { name: "Git", experience: "Advanced" },
-                    ]} />
-                    
-                    <Technologies headers={["Technology", "Experience"]} rows={[
-                    { name: "PostgreSQL", experience: "Regular" },
-                    { name: "MySQL", experience: "Regular" },
-                    { name: "Redis", experience: "Basic" },
-                    { name: "FastAPI/ Flask/ Django", experience: "Basic" },
-                    { name: "Streamlit", experience: "Regular" },
-                    { name: "Spring Boot", experience: "Basic" },
-                ]} />
-                </div>
-            </div>
+            <TechCarousel />
             <Separator rightText="Experience" leftText="Technology"/>
+            <div className="status-panel-container">
+                <StatusPanel data={[
+                    {serviceName: "API Gateway", status: "Operational"},
+                    {serviceName: "Authentication Service", status: "Operational"},
+                    {serviceName: "User Service", status: "Operational"},
+                    {serviceName: "Payment Service", status: "Operational"},
+                    {serviceName: "Notification Service", status: "Operational"},
+                ]}
+                 />
+            </div>
+            <Separator rightText="LAT/LON" leftText="World View"/>
+            <WorldView />
         </div>
     )
 }

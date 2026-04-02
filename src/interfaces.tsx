@@ -11,6 +11,16 @@ interface Technology {
 interface TechnologiesTableProps {
     headers: string[];
     rows: Technology[];
+    text: string[];
 }
 
-export type { Technology, SeparatorProps, TechnologiesTableProps };
+interface StatusPanelProps {
+    serviceName: string;
+    status: string;
+}
+
+interface StatusPanelTableProps {
+    data: StatusPanelProps[];
+}
+
+export type { Technology, SeparatorProps, TechnologiesTableProps, StatusPanelProps, StatusPanelTableProps };

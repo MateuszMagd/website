@@ -1,0 +1,19 @@
+{
+  "sidePanel": {
+    "technologies": {
+      "Python": "Python is my primary programming language. I have hands-on experience with frameworks such as FastAPI, Django, Flask, and Streamlit. I also worked with PyTorch for machine learning projects. Most of my projects are built in Python, including my professional experience as a Python developer.",
+      
+      "Web Development": "My professional experience in web development is mainly based on Python frameworks. In personal projects, I work with JavaScript, React, HTML, and CSS. I also have experience using Node.js in selected projects.",
+      
+      "DevOps": "I have experience with various DevOps tools and technologies, primarily from professional work. I also explored tools like Terraform independently. I worked with databases for web applications, RAG systems, and caching solutions.",
+      
+      "Other Technologies": "In addition to my core stack, I worked with Java (Spring Boot), C# (.NET), and C/C++. Java and Spring Boot were mainly used in academic and project work, while C# was used in personal projects. I continuously explore new technologies and expand my skill set."
+    }
+  },
+  "terminal": {
+    "AboutMe": "PlaceHolder",
+    "Projects": "PlaceHolder",
+    "Contact": "PlaceHolder",
+    "Help": "PlaceHolder"
+  }
+}

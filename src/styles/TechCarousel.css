@@ -1,0 +1,49 @@
+.tech-carousel {
+    width: 100%;
+    padding: 0.5em 0 1em;
+}
+
+.carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.85em;
+    margin-top: 0.85em;
+}
+
+.carousel-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: var(--primary);
+    transform: scale(1.35);
+    box-shadow: 0 0 6px var(--primary);
+}
+
+.carousel-dot:hover:not(.active) {
+    background: var(--primary);
+    opacity: 0.5;
+}
