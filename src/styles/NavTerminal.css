@@ -55,3 +55,12 @@
         0% 100%
     );
 }
+
+@media (max-width: 768px) {
+    .nav-terminal-button {
+        width: auto;
+        flex: 1;
+        font-size: 11px;
+        padding: 0 4px;
+    }
+}

@@ -58,3 +58,23 @@
     justify-content: center;
     gap: 1em;
 }
+
+@media (max-width: 768px) {
+    .side-panel {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 8px;
+    }
+
+    .time-panel {
+        font-size: 22px;
+    }
+
+    .status-panel-container {
+        flex-direction: column;
+    }
+
+    .status-panel-container > * {
+        width: 100%;
+    }
+}

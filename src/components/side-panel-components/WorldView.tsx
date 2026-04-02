@@ -24,9 +24,8 @@ export default function WorldView() {
         <div className="world-view-container">
             <div className="world-view-header">
                 <span className="world-view-title">WORLD VIEW</span>
-                <span className="world-view-subtitle">GLOBAL NETWORK MAP</span>
+                <span className="world-view-subtitle">ENDPOINT LAT/LON</span>
             </div>
-            <div className="world-view-label">ENDPOINT LAT/LON</div>
             <Globe
                 ref={globeRef}
                 width={260}

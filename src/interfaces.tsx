@@ -16,7 +16,7 @@ interface TechnologiesTableProps {
 
 interface StatusPanelProps {
     serviceName: string;
-    status: string;
+    status: "Online" | "Offline" | "Minor Problems";
 }
 
 interface StatusPanelTableProps {

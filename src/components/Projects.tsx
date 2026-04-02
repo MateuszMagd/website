@@ -1,4 +1,5 @@
 import Terminal from "./Terminal"
+import text from "../texts.json";
 
 interface ProjectsProps {
     activePage: string;
@@ -9,7 +10,7 @@ export default function Projects({ activePage, onNavigate }: ProjectsProps) {
     return (
         <>
             <Terminal 
-                text_in_terminal="My projects will be listed here."
+                text_in_terminal={text.terminal.Projects}
                 folder="projects"
                 command="ls projects/"
                 activePage={activePage}

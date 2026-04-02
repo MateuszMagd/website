@@ -11,9 +11,11 @@
     }
   },
   "terminal": {
-    "AboutMe": "PlaceHolder",
-    "Projects": "PlaceHolder",
-    "Contact": "PlaceHolder",
-    "Help": "PlaceHolder"
+    "AboutMe": "Software Engineer focused on Python, backend systems, and AI. I enjoy building efficient and scalable solutions, working with data, and exploring machine learning. I value clean code, performance, and continuous learning, with a strong interest in automation and system optimization. \nMost of my work and projects are centered around Python, where I gained both practical and professional experience.\n\nI don't limit myself to a single technology. I believe that understanding different parts of a system is essential for building better solutions and collaborating effectively within a team. This approach allows me to see the bigger picture and contribute across multiple areas of a project.\n\nI am open to new opportunities and collaborations, including working with technologies that I am still developing skills in. I am highly motivated to learn, adapt, and continuously improve. If you'd like to learn more about my experience or work together, feel free to reach out.",
+    
+    "Projects": "Collection of personal and academic projects, including AI-based image localization, sentiment analysis, and web applications. Most projects are built with Python, with additional work in React and modern web technologies.\n\nA key project is a Hybrid Drone Localization System — an AI-based image localization system that identifies the position of a drone image within a larger satellite image using deep learning and computer vision techniques. The model processes both images, generates a similarity heatmap, and predicts the most probable location, including Top-5 candidate positions. The project includes a full pipeline: data preparation, training, evaluation, and inference.\n\nAnother project is a Python-based system designed to process and interpret user input in a structured and scalable way. It follows clean architecture principles, including modular design, adapters, and pre/post-processing pipelines, enabling efficient handling of real-time data. The system is designed to be easily extendable with features such as noise reduction, voice state analysis, and intelligent input interpretation.",
+    "Contact": "Feel free to reach out. Available for collaboration, internships, and junior developer (and more!) roles.\nGitHub: https://github.com/MateuszMagd \nEmail: mateusz.magdzinski.work@gmail.com",
+    
+    "Help": "Available commands:\n> about\n> projects\n> contact\n> help\n\nUse these commands to navigate through the terminal interface. Also on side panel, you can explore technologies I work with. If you have any questions or want to connect, don't hesitate to reach out!"
   }
 }

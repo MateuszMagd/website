@@ -58,6 +58,27 @@
     padding: 1em 0.5em 1em 0.5em;
 }
 
+@media (max-width: 768px) {
+    .technologies {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .technologies table {
+        width: 100%;
+    }
+
+    .vertical-separator {
+        display: none;
+    }
+
+    .technologies .text-information {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .technologies table {
     width: 45%;
     height: 100%;

@@ -40,3 +40,9 @@
     margin: 0em 1em 0em 0em;
     text-align: right;
 }
+
+@media (max-width: 768px) {
+    .time-panel-container {
+        font-size: 22px;
+    }
+}

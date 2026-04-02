@@ -22,6 +22,7 @@ export default function Terminal({ text_in_terminal, folder, command, activePage
                     <p className="terminal-text">
                         {text_in_terminal}
                     </p>
+                    <p><span style={{ color: "var(--accent)" }}>matmag@portfolio</span>:<span style={{ color: "var(--text-dim)" }}>/{folder}$</span><span className="terminal-cursor" /></p>
                 </div>
             </div>
         </div>

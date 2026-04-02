@@ -1,0 +1,85 @@
+.mini-terminal {
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bg);
+    font-size: 11px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.mini-terminal-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.mini-terminal-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.mini-terminal-dot.red    { background-color: #ef4444; }
+.mini-terminal-dot.yellow { background-color: #facc15; }
+.mini-terminal-dot.green  { background-color: #22c55e; }
+
+.mini-terminal-body {
+    padding: 0.6em 0.8em;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 160px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) transparent;
+}
+
+.mini-terminal-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mini-terminal-line--command {
+    color: var(--text);
+}
+
+.mini-terminal-line--output {
+    color: var(--accent);
+    padding-left: 1em;
+}
+
+.mini-terminal-line--log {
+    color: var(--text-dim);
+}
+
+.mini-terminal-title {
+    margin-left: 8px;
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+}
+
+.mini-terminal-prompt {
+    color: var(--highlight);
+}
+
+.mini-terminal-cursor {
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background-color: var(--text);
+    margin-left: 2px;
+    animation: blink 1s step-start infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}

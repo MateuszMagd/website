@@ -1,4 +1,5 @@
 import Terminal from "./Terminal"
+import text from "../texts.json";
 
 interface HelpProps {
     activePage: string;
@@ -9,7 +10,7 @@ export default function Help({ activePage, onNavigate }: HelpProps) {
     return (
         <>
             <Terminal 
-                text_in_terminal="Navigate using the buttons above: About Me, My Projects, Contact Me, Help."
+                text_in_terminal={text.terminal.Help}
                 folder="help"
                 command="cat help.txt"
                 activePage={activePage}
